@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica :: Campos Ocultos</title>
+</head>
+
+<body>
+    <h1>Página 2</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Usuario: {{usuario}}</td>
+            </tr>
+            <tr>
+                <td>Contraseña: {{contrasenia}}</td>
+            </tr>
+        </table>
+    </div>
+    <form action="{% url 'controller2' %}" method="post">
+
+        <div>
+
+            <label for="name">Valor 1:</label>
+
+            <input type="text" id="user_valor1" name="user_valor1">   </div>
+
+        <div>
+
+            <label for="name">Valor 2:</label>
+
+            <input type="text" id="user_valor2" name="user_valor2">   </div>
+
+        <input type="hidden" name="user_name" value="{{usuario}}">
+        <input type="hidden" name="user_password" value="{{contrasenia}}">
+
+        <div class="button">
+
+            <button type="submit">Calcular</button>
+        </div>
+    </form>
+</body>
+
+</html>

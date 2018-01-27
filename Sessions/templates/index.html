@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica :: Campos Ocultos</title>
+</head>
+
+<body>
+    <h1>Página 1</h1>
+    <form action="{% url 'controller1' %}" method="post">
+
+        <div>
+
+            <label for="name">Usuario:</label>
+
+            <input type="text" id="user_name" name="user_name">   </div>
+
+        <div>
+
+            <label for="mail">Contraseña:</label>
+
+            <input type="password" id="user_password" name="user_password">   </div>
+
+        <div class="button">
+
+            <button type="submit">Ingresar</button>
+        </div>
+    </form>
+</body>
+
+</html>
